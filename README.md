@@ -7,7 +7,7 @@ A premium, responsive, bilingual personal resume website built with plain HTML, 
 - Thai and English language switch without page refresh
 - Elegant light and dark mode with localStorage persistence
 - Sticky navigation with active section highlight
-- Smooth scrolling, scroll reveal, typing effect, ripple buttons, and animated progress bars
+- Smooth scrolling, scroll reveal, typing effect, and ripple buttons
 - Responsive layout for desktop, laptop, tablet, mobile, and large monitors
 - SEO metadata, Open Graph tags, Twitter Card tags, favicon support, and semantic HTML
 - Works by opening `index.html` directly

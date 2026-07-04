@@ -223,10 +223,6 @@ function setupReveal() {
 
       entry.target.classList.add("visible");
 
-      if (entry.target.classList.contains("skill-card")) {
-        const progress = entry.target.querySelector(".progress span");
-        progress.style.width = `${entry.target.dataset.progress}%`;
-      }
     });
   }, { threshold: 0.18 });
 
