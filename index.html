@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium bilingual resume website for Kritsana Pirom, Computer Engineering and Artificial Intelligence student at Walailak University.">
+  <meta name="keywords" content="Kritsana Pirom, Mike, Computer Engineering, Artificial Intelligence, Walailak University, Resume, Portfolio, AI Engineer, Software Engineer">
+  <meta name="author" content="Kritsana Pirom">
+  <meta property="og:title" content="Kritsana Pirom - Resume Portfolio">
+  <meta property="og:description" content="Computer Engineering and Artificial Intelligence student portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kritsana Pirom - Resume Portfolio">
+  <meta name="twitter:description" content="Computer Engineering and Artificial Intelligence student portfolio.">
+  <meta name="twitter:image" content="assets/profile.jpg">
+  <title>Kritsana Pirom | Resume Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading">
+    <div class="loader-mark">KP</div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Kritsana Pirom home">
+        <span class="brand-mark">KP</span>
+        <span>Kritsana Pirom</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="#education" class="nav-link" data-i18n="nav.education">Education</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="pill-button" id="langToggle" type="button" aria-label="Switch language">TH</button>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.9 8.9 0 0 1 11.2 3a7 7 0 1 0 9.8 9.8Z"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="floating-shape shape-one"></div>
+      <div class="floating-shape shape-two"></div>
+      <div class="floating-shape shape-three"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Resume Portfolio</p>
+        <h1>
+          <span data-i18n="hero.greeting">Hello, I am</span>
+          <strong>Kritsana Pirom</strong>
+        </h1>
+        <p class="hero-meta">
+          <span data-i18n="hero.nickname">Nickname: Mike</span>
+          <span data-i18n="hero.age">Age: 20</span>
+        </p>
+        <p class="hero-title" aria-live="polite"><span id="typingText"></span><span class="typing-caret"></span></p>
+        <p class="hero-university">Walailak University</p>
+        <div class="hero-actions">
+          <a class="primary-button ripple" href="#" download aria-label="Download resume placeholder">
+            <span data-i18n="hero.download">Download Resume</span>
+          </a>
+          <a class="secondary-button ripple" href="#contact" data-i18n="hero.contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-media reveal">
+        <div class="profile-frame">
+          <img src="assets/profile.jpg" alt="Portrait of Kritsana Pirom" loading="lazy">
+        </div>
+        <div class="profile-card glass">
+          <span class="status-dot"></span>
+          <span data-i18n="hero.status">Available for learning opportunities</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="about.eyebrow">About Me</p>
+        <h2 data-i18n="about.title">Designing useful technology with curiosity and care.</h2>
+      </div>
+      <div class="about-grid">
+        <article class="about-panel reveal">
+          <p data-i18n="about.p1">I am a Computer Engineering and Artificial Intelligence student at Walailak University with strong interests in Artificial Intelligence, Machine Learning, Web Application Development, and Internet of Things (IoT).</p>
+          <p data-i18n="about.p2">I enjoy learning new technologies and applying them to solve real-world problems. I have experience developing websites, software applications, and AI projects through coursework and collaborative team projects.</p>
+          <p data-i18n="about.p3">My goal is to become a Software Engineer or AI Engineer who creates impactful technologies that improve people's lives.</p>
+        </article>
+        <aside class="about-note reveal">
+          <span data-i18n="about.focusLabel">Current focus</span>
+          <strong>AI, Web Application, IoT</strong>
+          <p data-i18n="about.focusText">Building a strong engineering foundation through real projects, teamwork, and continuous learning.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section content-section" id="education">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="education.eyebrow">Education</p>
+        <h2 data-i18n="education.title">Learning path and academic foundation.</h2>
+      </div>
+      <div class="timeline education-timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <p data-i18n="education.elementaryLabel">Elementary - Primary</p>
+            <h3 data-i18n="education.elementary">โรงเรียนจุฬาภรณ์พิชญาคาร</h3>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <p data-i18n="education.upperPrimaryLabel">Upper Primary</p>
+            <h3 data-i18n="education.upperPrimary">โรงเรียนวัดหน้าเขา</h3>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <p data-i18n="education.juniorLabel">Junior High</p>
+            <h3 data-i18n="education.junior">โรงเรียนพิปูนสังฆรักษ์ประชาอุทิศ</h3>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <p data-i18n="education.seniorLabel">Senior High</p>
+            <h3 data-i18n="education.senior">โรงเรียนพิบูลย์สังฆประชาอุทิศ</h3>
+            <span class="badge">GPAX 3.70</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <p data-i18n="education.currentLabel">Current</p>
+            <h3>Walailak University</h3>
+            <span data-i18n="education.faculty">Faculty of Engineering and Technology</span>
+            <span data-i18n="education.major">Computer Engineering and Artificial Intelligence</span>
+            <span class="badge" data-i18n="education.year">Year 3</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="skills.eyebrow">Skills</p>
+        <h2 data-i18n="skills.title">Technical range with practical learning momentum.</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal" data-progress="76">
+          <h3 data-i18n="skills.programming">Programming</h3>
+          <p>C++, Java, SQL</p>
+          <div class="progress"><span></span></div>
+        </article>
+        <article class="skill-card reveal" data-progress="72">
+          <h3 data-i18n="skills.ai">AI &amp; Data</h3>
+          <p>Machine Learning, Deep Learning</p>
+          <div class="progress"><span></span></div>
+        </article>
+        <article class="skill-card reveal" data-progress="82">
+          <h3 data-i18n="skills.web">Web Development</h3>
+          <p>HTML, CSS, JavaScript</p>
+          <div class="progress"><span></span></div>
+        </article>
+        <article class="skill-card reveal" data-progress="78">
+          <h3 data-i18n="skills.tools">Tools</h3>
+          <p>Git, GitHub, VS Code, Arduino IDE</p>
+          <div class="progress"><span></span></div>
+        </article>
+        <article class="skill-card reveal" data-progress="86">
+          <h3 data-i18n="skills.soft">Soft Skills</h3>
+          <p>Communication, Teamwork, Analytical Thinking, Problem Solving</p>
+          <div class="progress"><span></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section content-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="projects.eyebrow">Projects</p>
+        <h2 data-i18n="projects.title">Selected academic and engineering work.</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-image"><span>XO</span></div>
+          <div class="project-body">
+            <h3 data-i18n="projects.p1.title">Mini XO Game</h3>
+            <p data-i18n="projects.p1.description">Developed a Tic Tac Toe game using C programming language.</p>
+            <div class="tags"><span>C</span><span>Game Logic</span></div>
+            <div class="project-actions">
+              <a href="#" class="text-button ripple" data-i18n="projects.details">View Details</a>
+              <a href="#" class="text-button muted ripple">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-image"><span>PRK</span></div>
+          <div class="project-body">
+            <h3 data-i18n="projects.p2.title">My Parking Reservation System</h3>
+            <p data-i18n="projects.p2.description">Developed a smart parking reservation system that helps reduce parking search time and improves travel planning.</p>
+            <div class="tags"><span>Web App</span><span>System Design</span></div>
+            <div class="project-actions">
+              <a href="#" class="text-button ripple" data-i18n="projects.details">View Details</a>
+              <a href="#" class="text-button muted ripple">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-image"><span>AI</span></div>
+          <div class="project-body">
+            <h3 data-i18n="projects.p3.title">Road Accident Prediction System</h3>
+            <p data-i18n="projects.p3.description">Developed a Machine Learning model to analyze and predict road accident risks for future prevention planning.</p>
+            <div class="tags"><span>Machine Learning</span><span>Data Analysis</span></div>
+            <div class="project-actions">
+              <a href="#" class="text-button ripple" data-i18n="projects.details">View Details</a>
+              <a href="#" class="text-button muted ripple">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section content-section" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="experience.eyebrow">Experience</p>
+        <h2 data-i18n="experience.title">University projects and collaborative practice.</h2>
+      </div>
+      <div class="timeline experience-timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <h3 data-i18n="experience.cardTitle">University Projects</h3>
+            <p data-i18n="experience.item1">Developed websites and software applications for coursework.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <h3 data-i18n="experience.teamTitle">Software teamwork</h3>
+            <p data-i18n="experience.item2">Collaborated with teammates using software engineering processes.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div>
+            <h3 data-i18n="experience.aiTitle">AI and IoT practice</h3>
+            <p data-i18n="experience.item3">Developed Machine Learning models integrated with IoT systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+        <h2 data-i18n="contact.title">Let's connect and build something useful.</h2>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="mailto:woqwri@gmail.com" aria-label="Send email to Kritsana">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4V6Zm8 7 8-5H4l8 5Zm0 2.2L4 10v8h16v-8l-8 5.2Z"/></svg>
+          <span>Email</span>
+          <strong>woqwri@gmail.com</strong>
+        </a>
+        <a class="contact-card reveal" href="tel:0936138298" aria-label="Call Kritsana">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.6.6 4 .6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 3.5c0-.6.4-1 1-1h3.6c.6 0 1 .4 1 1 0 1.4.2 2.7.6 4 .1.4 0 .8-.3 1.2l-2.3 2.1Z"/></svg>
+          <span data-i18n="contact.phone">Phone</span>
+          <strong>0936138298</strong>
+        </a>
+        <a class="contact-card reveal" href="https://www.instagram.com/kr1t5an_/" target="_blank" rel="noopener" aria-label="Open Instagram profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm4.5 3.3a4.7 4.7 0 1 1 0 9.4 4.7 4.7 0 0 1 0-9.4Zm0 2a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm5-2.4a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg>
+          <span>Instagram</span>
+          <strong>kr1t5an_</strong>
+        </a>
+        <div class="contact-card reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.7 2 11.3c0 4 3.5 7.4 8.2 8.1.3.1.7.2.8.4.1.2.1.6.1.9l-.1.9c0 .3.1.6.5.3l1.2-.7c.3-.2.6-.3 1-.3 4.8-.6 8.3-3.9 8.3-7.9C22 6.7 17.5 3 12 3Zm-5 10.8V8.9h1.3v3.7h2v1.2H7Zm4.2 0V8.9h1.3v4.9h-1.3Zm2.4 0V8.9h1.2l2.1 2.8V8.9h1.3v4.9H17l-2.1-2.8v2.8h-1.3Z"/></svg>
+          <span>Line</span>
+          <strong>291248mike</strong>
+        </div>
+      </div>
+      <div class="contact-actions reveal">
+        <button class="primary-button ripple" id="copyEmail" type="button" data-i18n="contact.copy">Copy Email</button>
+        <span class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Kritsana Pirom</p>
+    <p data-i18n="footer.credit">Designed &amp; Developed by Kritsana</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5 5 12l1.4 1.4 4.6-4.6V20h2V8.8l4.6 4.6L19 12l-7-7Z"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
